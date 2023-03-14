@@ -13,7 +13,7 @@ struct TripsGrid: View {
         // TODO: Do lazy loading
         HStack {
             Text("Plan your trip").padding(.leading)
-                .font(.callout)
+                .font(.system(size: 10))
                 .foregroundColor(.gray)
             Spacer()
             Button {

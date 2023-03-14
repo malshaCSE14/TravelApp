@@ -53,7 +53,9 @@ struct LocationCell: View {
                     // TODO: Fix text truncate for `Anuradhapuraya`
                     Text(location.name)
                         .foregroundColor(.white)
-                        .fontWeight(.semibold)
+                        .fontWeight(.medium)
+                        .multilineTextAlignment(.leading)
+                        .lineLimit(2)
                         .padding(.leading, 5)
 
                     Spacer()

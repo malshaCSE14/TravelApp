@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F188AE2929C05DF00084808F /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188AE2829C05DF00084808F /* Color+Extensions.swift */; };
 		F1B6CE7B29C0448700F6D012 /* TravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B6CE7A29C0448700F6D012 /* TravelApp.swift */; };
 		F1B6CE7D29C0448700F6D012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B6CE7C29C0448700F6D012 /* ContentView.swift */; };
 		F1B6CE7F29C0448800F6D012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B6CE7E29C0448800F6D012 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F188AE2829C05DF00084808F /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		F1B6CE7729C0448700F6D012 /* TravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B6CE7A29C0448700F6D012 /* TravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelApp.swift; sourceTree = "<group>"; };
 		F1B6CE7C29C0448700F6D012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F188AE2729C05DD10084808F /* AppExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				F188AE2829C05DF00084808F /* Color+Extensions.swift */,
+			);
+			path = AppExtensions;
+			sourceTree = "<group>";
+		};
 		F1B6CE6E29C0448700F6D012 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +130,7 @@
 		F1B6CE7929C0448700F6D012 /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
+				F188AE2729C05DD10084808F /* AppExtensions */,
 				F1B6CEC929C044E100F6D012 /* Trips */,
 				F1B6CEB529C044A000F6D012 /* Favorites */,
 				F1B6CEA429C044A000F6D012 /* Home */,
@@ -391,6 +402,7 @@
 				F1B6CEC229C044A000F6D012 /* NetworkManager.swift in Sources */,
 				F1B6CEC429C044A000F6D012 /* FavoritesTab.swift in Sources */,
 				F1B6CEC029C044A000F6D012 /* TripsGrid.swift in Sources */,
+				F188AE2929C05DF00084808F /* Color+Extensions.swift in Sources */,
 				F1B6CEBE29C044A000F6D012 /* LocationGrid.swift in Sources */,
 				F1B6CEBD29C044A000F6D012 /* SearchBar.swift in Sources */,
 				F1B6CEC129C044A000F6D012 /* TripGalleryIconView.swift in Sources */,

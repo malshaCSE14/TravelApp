@@ -11,13 +11,18 @@ struct SearchBar: View {
     var body: some View {
         HStack {
             // TODO: Add the app icon or remove the entire image
-            Image(systemName: "magnifyingglass").padding([.leading], 2)
-            Text("Where do you wanna go?") // TODO:  Make the text field searchable, editable
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(.gray)
+                .fontWeight(.bold)
+                .padding([.leading], 2)
+            Text("Where do you wanna travel?")
+                .foregroundColor(Color.searchBarTextGray)// TODO:  Make the text field searchable, editable
+                .font(.callout)
             Spacer()
         }
         .padding(8)
-        .background(Color.gray) // TODO: Change the color
-        .cornerRadius(12.0)
+        .background(Color.searchBarGray) // TODO: Change the color
+        .cornerRadius(10.0)
         .padding([.top, .horizontal])
     }
 }

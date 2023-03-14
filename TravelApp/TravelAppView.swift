@@ -17,6 +17,7 @@ struct TravelAppView: View {
                 Text("Home")
                 Image(systemName: "house")
             }
+            .accentColor(.white)
             FavoritesTab()
             TripsTab()
             ProfileTab()

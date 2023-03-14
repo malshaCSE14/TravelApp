@@ -31,13 +31,18 @@ struct LocationGrid: View {
                 Location(id: "15", name: "Udawalawa", imageUrl: "location-15", isFavorited: false),
                 Location(id: "16", name: "Yala", imageUrl: "location-16", isFavorited: false),
                 Location(id: "17", name: "Bundala", imageUrl: "location-17", isFavorited: false),
-                Location(id: "18", name: "Sigiriya", imageUrl: "location-18", isFavorited: true),
+                Location(id: "18", name: "Sigiri Wall Arts", imageUrl: "location-18", isFavorited: true),
                 Location(id: "19", name: "Mirissa", imageUrl: "location-19", isFavorited: true)
             ]
             
             LazyVGrid(columns: gridLayout, alignment: .center, spacing: 11) {
                 ForEach(locations.indices, id: \.self) { index in
-                    LocationCell(location: locations[index])
+                    NavigationLink {
+                        LocationView(location: locations[index])
+                    } label: {
+                        LocationCell(location: locations[index])
+                    }
+                    // TODO: Hide the location view navigation bar
                 }
             }
             .padding(.all, 10)

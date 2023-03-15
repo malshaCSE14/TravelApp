@@ -15,4 +15,7 @@ extension Color {
     static var searchBarGray: Color {
         .init(red: 239.0 / 255.0, green: 238.0 / 255.0, blue: 238.0 / 255.0, opacity: 1.0)
     }
+    static var travelBlue: Color {
+        .init(red: 239.0 / 255.0, green: 238.0 / 255.0, blue: 238.0 / 255.0, opacity: 1.0)
+    }
 }

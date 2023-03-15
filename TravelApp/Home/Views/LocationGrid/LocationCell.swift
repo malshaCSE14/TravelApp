@@ -11,7 +11,7 @@ struct LocationCell: View {
     var location: Location
     var body: some View {
         let width = (UIScreen.main.bounds.width / 2) - 40
-
+        
         ZStack {
             Image(location.imageUrl)
                 .resizable()
@@ -32,7 +32,7 @@ struct LocationCell: View {
                 endPoint: .bottom
             )
             .cornerRadius(10)
-
+            
             VStack {
                 HStack {
                     Spacer()
@@ -40,11 +40,17 @@ struct LocationCell: View {
                     Button {
                         print("Add to trip tapped")
                     } label: {
-                        Image(systemName: "plus")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                            .font(Font.title.weight(.semibold))
-                            .foregroundColor(.white)
+                        ZStack {
+                            Circle()
+                                .fill(.black.opacity(0.2))
+                                .frame(height: 30)
+                            Image(systemName: "plus")
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                                .font(Font.title.weight(.semibold))
+                                .foregroundColor(.white)
+                        }
+                        
                     }
                     .padding(10)
                 }
@@ -57,7 +63,7 @@ struct LocationCell: View {
                         .multilineTextAlignment(.leading)
                         .lineLimit(2)
                         .padding(.leading, 5)
-
+                    
                     Spacer()
                     Button {
                         print("Favorite tapped")
@@ -70,7 +76,7 @@ struct LocationCell: View {
                             .foregroundColor(.white)
                     }
                     .padding(5)
-
+                    
                 }
                 .padding(6)
             }
